@@ -44,3 +44,44 @@ for (var key in ninja) {
     console.log(ninja[key]);
   }
 }
+
+console.log('^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^');
+awesome();
+function awesome() {
+  console.log("too good to be true");
+}
+console.log('############################################');
+
+//I can declaier functions like string and stuff
+var varFunction;
+
+
+
+var varFunction = function() {
+  console.log("How will this get hoisted?");
+}
+
+// varFunction();
+
+console.log('...........................................');
+
+var hello = "interesting";
+function example() {
+  var hello = "hi!";
+  console.log(hello);
+}
+example();
+console.log(hello);
+
+
+//declarations get hoisted 
+var hello;                 
+function example() {       
+  var hello;               
+  hello = "hi";            
+  console.log(hello)       
+}
+//assignments and invocation maintain order
+hello = "interesting";     
+example();                        
+console.log(hello);
