@@ -1,4 +1,18 @@
 
+
+// var bod = document.body;
+// bod = ""; // this is more fun if it's a random page with stuff already on it (like the learning platform for example).
+// bod = "Hello World";
+
+var bod = document.body;
+for (var i = 0; i < 10; i ++){
+  bod += "<p> This has gone through the loop completely: " +i+ " times </p>";
+}
+console.log(bod);
+
+console.log('%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%');
+
+
 // An anonymous function is a function that was declared without any named identifier to 
 //refer to it. As such, an anonymous function is usually not accessible after its initial creation.
 
