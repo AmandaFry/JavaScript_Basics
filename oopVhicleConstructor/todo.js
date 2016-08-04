@@ -36,10 +36,26 @@ function VehicleConstructor(name, wheels, passangers){
 	return vehicle;
 }
 
+console.log('^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^');
 var bike = new VehicleConstructor("blue bike",2,1);
 bike.makeNoise();
 bike.makeNoise = function(){
 	console.log("honk honk");
 }
 bike.makeNoise();
+console.log('^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^');
+
+console.log('###########################################');
+var sudan = new VehicleConstructor("pink sudan", 4, 5);
+sudan.makeNoise = function(){
+	console.log("honk honk");
+}
+sudan.makeNoise();
+console.log('###########################################');
+
+console.log('*******************************************');
+var bus = new VehicleConstructor("Ikarus bus", 8, 21);
+bus.makeNoise();
+console.log('*******************************************');
+
 
